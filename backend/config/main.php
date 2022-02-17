@@ -34,17 +34,23 @@ return [
                 ],
             ],
         ],
+        'view' => [
+            'theme' => [
+                'pathMap' => [
+                    '@app/views' => '@backend/themes'
+                ],
+            ],
+        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
-            ],
+            'rules' => [],
         ],
-        */
+
     ],
     'params' => $params,
 ];
